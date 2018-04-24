@@ -1,0 +1,12 @@
+db:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/test
+  username: root
+  password:
+hibernate:
+ show_sql: true
+ format_sql: true
+ naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+ dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+ hbm2ddl.auto: update
+packages.to.scan: com.example.demo.bean
